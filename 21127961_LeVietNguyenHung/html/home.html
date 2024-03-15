@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        body{
+            display: flex;
+            justify-content: center; /* Căn lề trang web vào giữa theo chiều ngang */
+/*            align-items: center;  Căn lề trang web vào giữa theo chiều dọc */
+        }
         #container{
             border: 1px solid black;
             font-family: 'Times New Roman', Times, serif;
@@ -13,24 +17,151 @@
             text-align: center;
         }
         header{
-            border-bottom: 1px solid black;
-        }
-        nav{
-            border-bottom: 1px solid black;
-        }
-        #content{
             display: inline-flex;
         }
-        section{
-            border-right: 1px solid black;
-            width: 480px;
+        #text{
+            text-align: left;
         }
-        aside{
-            border-left:1px solid black;
-            width: 480px;
+        .text_1{
+            color: #cee2ea ;
+            font-size: 20px;
+        }
+        .text_2{
+            color: #f46e67;
+            font-size: 25px;
+            margin-top: -20px;
+        }
+        .text_3{
+            margin-top: 10px;
+            margin-left: 150px;
+        }
+        input[type="search"] {
+            margin-top: 10px;
+            margin-left: 150px;
+            width: 270px;
+            height: 25px;
+            border-radius: 3px;
+        }
+        a{
+            text-decoration: none;
+        }
+        nav{
+            background-color: #e4c151 ;
+            display: flex;
+            justify-content:space-between;/* Căn lề trang web vào giữa theo chiều ngang */
+            align-items: center;
+            font-weight: bold;
+        }
+        nav, a{
+            padding-right: 5px;
+            color: white;
+        }
+        nav, a:hover{
+            color: red;
+        }
+        nav, img{
+            padding-top: 5px;
+        }
+        #link{
+            margin-left: -600px;
+            margin-top: 10px;
+            color: rgb(90, 87, 87);
+        }
+
+        #content{
+            display: inline-flex;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+
+        section{
+            border: 1px solid rgb(161, 154, 154);
+            border-bottom: 10px solid #eac54d ;
+            border-radius: 5px;
+            text-align: left;
+            width: 80%;
+            
+        }
+        input[type="SearchSection"] {
+            margin-right: 0;
+            margin-left: 80px;
+            margin-top: 10px;
+            width: 350px;
+            height: 25px;
+            border-radius: 3px;
+        }
+        .SearchSection_2 {
+            margin-right: 0;
+            margin-left: 20px;
+            margin-top: 10px;
+            width: 355px;
+            height: 30px;
+            border-radius: 3px;
+        }
+        .SearchSection_3{
+            margin-right: 0;
+            margin-left: 53px;
+            margin-top: 10px;
+            width: 355px;
+            height: 30px;
+            border-radius: 3px;
+        }
+        input[type="SearchSection_1"]{
+            height: 25px;
+            width: 160px;
+            margin-top: 10px;
+            border-radius: 3px;
+            margin-left: 40px;
+            margin-bottom: 10px;
+        }
+        #search_button{
+            height: 30px;
+            background-color: rgb(199, 16, 16);
+            margin-bottom: 30px;
+            color: white;
+            width: 100px;
+            margin-left: 140px;
+            cursor: pointer;
+        }
+        aside{ 
+            width: 390px;
+            margin-left: 10px;
+        }
+        .header_aside{
+            border: 1px solid rgb(161, 154, 154);
+            border-top: 5px solid #eac54d ;
+            height: 30px;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+        
+        ul{
+            list-style: none;
+            text-align: left;
         }
         footer{
-            border-top: 1px solid black;
+            background-color: #be1e2d;
+            display: inline-flex;
+            align-items: center;
+            color: white;
+            height: 130px;
+            
+        }
+        footer img{
+            width: 70px;
+            margin-left: 5px;
+        }
+        
+        .footer_left{
+           text-align: left;
+           margin-left: 10px; 
+           width: 60%;
+           
+        }
+        .footer_right{
+            margin-top: -30px;
+            text-align: left;
+            font-size: 13px;
         }
     </style>
 </head>
@@ -38,28 +169,131 @@
     <div id="container">
         <header>
             <img src="../hinh/huyhieu.PNG" alt="">
-            <div>
-                <a href="tentrang">
-                    TRANG THONG TIN DIEN TU
-                </a>
-                <a href="gd">
-                    PHO BIEN, GIAO DUC PHAP LUAT
-                </a>
+            <div id="text">
+                <p class="text_1">
+                   <b> TRANG THONG TIN DIEN TU</b>
+                </p>
+                    
+                <p class="text_2">
+                    <b>PHO BIEN, GIAO DUC PHAP LUAT</b>
+                </p>
             </div>
+            <div id="text">
+                <div class="text_3">
+                    Thu nam, 15/3/2024 | Gui cau hoi | Lien he
+                </div>
+                <input type="Search" placeholder="Tim kiem...">
+            </div>            
         </header>
         <nav>
-            Nav
+            <div>
+                <img src="../hinh/nha.PNG" alt="">
+            </div>
+            <a href="Cong">CONG TTDT BO CONG AN</a>
+            <a href="TT">TIN TUC</a>
+            <a href="GT">GIOI THIEU VAN BAN</a>
+            <a href="VB">VAN BAN</a>
+            <a href="DT">DU THAO </a>
+            <a href="HDPL">HOI DAP PHAP LUAT</a>
         </nav>
-        <span id="content">
+        <div id="link">
+            Trang chu > Pho bien, giao duc phap luat > 
+            <span style="color: red;">
+                Van ban
+            </span>
+        </div>
+        <div id="content">
             <section>
-                Section
+                <form action="" style="margin-left: 20px;">
+                    <div style="color: red; margin-bottom: 30px; margin-top: 20px;">
+                        <b>TIM KIEM VAN BAN</b>
+                    </div>
+                    <div>
+                        Tu Khoa         
+                        <input type="SearchSection" placeholder="Tu khoa tim kiem">
+                    </div>
+                    <div>
+                        Loai van ban         
+                        <select class="SearchSection_3">
+                            <option value="volvo" selected>Chon loai van ban</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                    <div>
+                        Co quan ban hanh         
+                        <select class="SearchSection_2">
+                            <option value="volvo" selected>Co quan ban hanh</option>
+                            <option value="saab" selected>Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                    <div>
+                        Ngay ban hanh         
+                        
+                        <input type="SearchSection_1" placeholder="Ngay ban hanh tu">
+                        <input type="SearchSection_1" style="margin-left: 18px;" placeholder="Ngay ban hanh den">
+                    </div>
+                    <button id="search_button">
+                        <b>TIM KIEM</b>
+                    </button>
+                    
+                      
+                </form>
             </section>
             <aside>
-                Aside
+                <div class="header_aside">
+                   DU THAO VAN BAN DANG LAY Y KIEN
+                </div>
+                <ul>
+                    <li>
+                        <div>
+                            <span><img src="../hinh/chuong.PNG" alt=""></span>
+                            <span>Ngay het han: </span>
+                            <span style="color:red;">
+                                28/04/2024
+                            </span>
+                        </div>
+                        Dự thảo Quyết định về tín dụng đối với người chấp hành xong án phạt tù</li>
+                    <li>
+                        <div>
+                            <span><img src="../hinh/chuong.PNG" alt=""></span>
+                            <span>Ngay het han: </span>
+                            <span style="color:red;">
+                                28/04/2024
+                            </span>
+                        </div>
+                        Hồ sơ dự thảo dự án Luật sửa đổi, bổ sung một số điều của Luật Xuất cảnh, nhập cảnh của công dân Việt Nam</li>
+                    <li>
+                        <div>
+                            <span><img src="../hinh/chuong.PNG" alt=""></span>                            <span>Ngay het han: </span>
+                            <span style="color:red;">
+                                28/04/2024
+                            </span>
+                        </div>
+                        Dự thảo Thông tư quy định công tác nghiên cứu chiến lược Công an nhân dân</li>
+                </ul>
             </aside>
-        </span>
+        </div>
         <footer>
-                footer
+            <img src="../hinh/huyhieu.PNG" alt="">
+                <span class="footer_left">
+                    
+                        CONG TTDT BO CONG AN - TRANG THONG TIN DIEN TU PHO BIEN, GIAO DUC PHAP LUAT
+                    <br>
+                    Dia chi: 44 Yet Kieu - Hoan Kiem - Ha Noi
+                    <br>
+                    Dien thoai: 069.2343647
+                </span>
+                <span class="footer_right">
+                    Ban quyen thuoc ve Bo Cong an.
+                    <br>
+                    Khi su dung lai thong tin, de nghi ghi ro nguon
+                    <br>
+                    "Cong TTDT Bo Cong an"
+                </span>
         </footer>
     </div>
 </body>
