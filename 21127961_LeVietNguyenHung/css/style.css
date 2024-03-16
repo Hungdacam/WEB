@@ -1,0 +1,206 @@
+body{
+    display: flex;
+    justify-content: center; /* Căn lề trang web vào giữa theo chiều ngang */
+/*            align-items: center;  Căn lề trang web vào giữa theo chiều dọc */
+}
+#container{
+   
+    font-family: 'Times New Roman', Times, serif;
+    width: 960px;
+    text-align: center;
+}
+header{
+    display: inline-flex;
+    background-image: url('../hinh/nen_header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#text{
+    text-align: left;
+}
+.text_1{
+    color: #cee2ea ;
+    font-size: 20px;
+}
+.text_2{
+    color: #f46e67;
+    font-size: 25px;
+    margin-top: -20px;
+}
+.text_3{
+    margin-top: 10px;
+    margin-left: 150px;
+}
+input[type="search"] {
+    margin-top: 10px;
+    margin-left: 150px;
+    width: 270px;
+    height: 25px;
+    border-radius: 3px;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    background-color: #e4c151 ;
+    display: flex;
+    justify-content:space-between;/* Căn lề trang web vào giữa theo chiều ngang */
+    align-items: center;
+    font-weight: bold;
+}
+nav, a{
+    padding-right: 5px;
+    color: white;
+}
+nav, a:hover{
+    color: red;
+}
+nav, img{
+    padding-top: 5px;
+}
+#link{
+    margin-left: -600px;
+    margin-top: 10px;
+    color: rgb(90, 87, 87);
+}
+
+#content{
+    display: inline-flex;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+section{
+    text-align: left;
+    width: 80%;
+} 
+section form{
+    border: 1px solid rgb(161, 154, 154);
+    border-bottom: 10px solid #eac54d ;
+    border-radius: 5px;
+    text-align: left;
+    
+}
+#thongtu{
+    margin-bottom: 0px;
+    width:400px;
+    height: 150px;
+    display: inline-flex;
+}
+.thongtu_header{
+    border: 1px solid gainsboro; 
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 500px;
+
+}
+.thongtu_header img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    padding: 0;
+}
+.thongtu_header .title{
+    font-weight: bold;
+    color: rgba(86, 84, 84, 0.761);
+}
+.thongtu_left{
+    border-right: 1px solid gainsboro;
+}
+.thongtu_left p{
+    margin-left: 20px;
+    width: 450px;
+}
+.thongtu_left ul{
+    display: inline-flex;
+}
+.thongtu_right{
+    margin-left: 10px;
+    width: 100px;
+}
+
+input[type="SearchSection"] {
+    margin-right: 0;
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 350px;
+    height: 25px;
+    border-radius: 3px;
+}
+.SearchSection_2 {
+    margin-right: 0;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 355px;
+    height: 30px;
+    border-radius: 3px;
+}
+.SearchSection_3{
+    margin-right: 0;
+    margin-left: 53px;
+    margin-top: 10px;
+    width: 355px;
+    height: 30px;
+    border-radius: 3px;
+}
+input[type="SearchSection_1"]{
+    height: 25px;
+    width: 160px;
+    margin-top: 10px;
+    border-radius: 3px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+#search_button{
+    height: 30px;
+    background-color: rgb(199, 16, 16);
+    margin-bottom: 30px;
+    color: white;
+    width: 100px;
+    margin-left: 140px;
+    cursor: pointer;
+}
+aside{ 
+    width: 390px;
+    margin-left: 10px;
+}
+.header_aside{
+    border: 1px solid rgb(161, 154, 154);
+    border-top: 5px solid #eac54d ;
+    height: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+ul{
+    list-style: none;
+    text-align: left;
+    margin-left: -30px;
+}
+footer{
+    background-color: #be1e2d;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    height: 130px;
+    
+}
+footer img{
+    width: 70px;
+    margin-left: 5px;
+}
+
+.footer_left{
+   text-align: left;
+   margin-left: 10px; 
+   width: 60%;
+   font-size: 15px;
+   
+}
+.footer_right{
+    margin-top: -30px;
+    text-align: left;
+    font-size: 15px;
+}
