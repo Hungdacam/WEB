@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+#container{
+    font-family: 'Times New Roman', Times, serif;
+    width: 960px;
+    text-align: center;
+}
+header{
+    display: inline-flex;
+    background-image: url(../hinh/nen_header.jpg);
+    background-position: cover;
+}
+.tttdt{
+    text-align: left;
+    margin-right: 200px;
+}
+input[type="search"] {
+    width: 200px;
+    height: 30px;
+    border: 1px solid aqua;
+    box-shadow: 2px solid aqua;
+    border-radius: 5px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        #container{
+            border: 1px solid black;
+            align-items: center;
+            text-align: center;
+            width: 960px;
+        }
+        header{
+            background-color: gray;
+            height: 70px;
+        }
+        nav{
+            background-color: aqua;
+            height: 40px;
+        }
+        .content{
+            display: inline-flex;
+            
+        }
+        section{
+            border-right: 1px solid red;
+            /* background-color: rgb(170, 51, 51); */
+            text-align: left;
+            width: 480px;
+            height: 500px;
+        }
+        aside{
+            border-left: 1px solid rgb(14, 104, 14);
+            background-color: rgb(21, 70, 21);
+            text-align: right;
+            width: 480px;
+        }
+        footer{
+            background-color:chartreuse;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            header
+        </header>
+        <nav>
+            nav
+        </nav>
+        <div class="content">
+            <section>
+                section
+                <table border="1px">
+                    <tr>
+                        <td>hung</td>
+                        <td>le</td>
+                        <td>viet</td>
+                    </tr>
+                    <tr>
+                        <td>le</td>
+                        <td>viet</td>
+                    </tr>
+                </table>
+            </section>
+            <aside>
+                aside
+            </aside>
+        </div>
+        <footer>
+                footer
+        </footer>
+    </div>
+</body>
+</html>
